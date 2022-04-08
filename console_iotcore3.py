@@ -12,17 +12,12 @@ MQTT_BRIDGE_HOSTNAME='mqtt.googleapis.com'
 MQTT_BRIDGE_PORT=8883
 
 import datetime
-import os
 import random
 import ssl
 import time
-
 import jwt
 import paho.mqtt.client as mqtt
-
 import json
-
-from threading import Lock
 
 period = 10
 

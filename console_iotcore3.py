@@ -153,7 +153,7 @@ def main():
         msg['temperature']=random.randint(25,30)
         msg['humidity']=random.randint(50,100)
         msg['pressure']=random.randint(900,1100)
-        msg['timestamp']=datetime.datetime.now()
+        msg['when']=datetime.datetime.now()
         json_data=json.dumps(msg,default=str)
         print(str(msg['temperature'])+' '+str(msg['humidity'])+' '+str(msg['pressure']))
         
